@@ -2,7 +2,7 @@ FROM nginx:alpine
 
 LABEL maintainer="<Vlad-Andrei Erculescu> herc@herc.work"
 
-RUN apk --update add git less openssh && \
+RUN apk --update add git less openssh openssh-client && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
