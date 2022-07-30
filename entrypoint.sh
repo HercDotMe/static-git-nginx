@@ -1,6 +1,6 @@
 echo "Cleaning directory ..."
-rm -rf /usr/share/nginx/html/*
-rm -rf /usr/share/nginx/html/.git
+rm -rfv /usr/share/nginx/html
+mkdir /usr/share/nginx/html
 
 if [[ ! -z SSH_DK ]]; then
   echo "Setting up for SSH cloning ..."
